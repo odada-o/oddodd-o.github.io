@@ -27,6 +27,8 @@ export default {
       fontFamily: {
         sans: 'var(--font-inter)',
         display: 'var(--font-lexend)',
+        comfortaa: 'Comfortaa',
+        gmarket: 'GmarketSansMedium',
       },
       maxWidth: {
         '2xl': '40rem',

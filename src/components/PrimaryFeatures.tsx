@@ -14,27 +14,27 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: '원페이지 디자인',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "모든 정보를 한 페이지에 담아 깔끔하고 직관적인 웹사이트를 제작합니다. 별도의 페이지 이동 없이 스크롤만으로 회사의 모든 정보를 확인할 수 있습니다.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: '맞춤형 템플릿',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "다양한 업종별 최적화된 템플릿을 제공합니다. 귀사의 브랜드 아이덴티티에 맞게 커스터마이징이 가능합니다.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: '모바일 최적화',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "모든 디바이스에서 완벽하게 작동하는 반응형 웹사이트를 제공합니다. 어떤 기기에서도 최적의 사용자 경험을 선사합니다.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: '간편한 관리',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      '전문 지식 없이도 쉽게 콘텐츠를 업데이트할 수 있는 직관적인 관리 시스템을 제공합니다. 텍스트부터 이미지까지 손쉽게 변경 가능합니다.',
     image: screenshotReporting,
   },
 ]
@@ -63,24 +63,24 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      className="overflow-hidden bg-slate-50"
     >
-      <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      />
+      <div className="relative overflow-hidden bg-blue-700/60 pb-28 pt-20 sm:py-32 backdrop-blur-2xl">
+      {/*<Image*/}
+      {/*  className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"*/}
+      {/*  src={backgroundImage}*/}
+      {/*  alt=""*/}
+      {/*  width={2245}*/}
+      {/*  height={1636}*/}
+      {/*  unoptimized*/}
+      {/*/>*/}
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+          <h2 className="font-display font-gmarket text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+            홈페이지 제작, 이제 복잡하지 않습니다.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            필요한 모든 것을 담은 홈페이지를 합리적인 가격에 제공합니다.
           </p>
         </div>
         <TabGroup
@@ -104,7 +104,7 @@ export function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            'font-display text-lg ui-not-focus-visible:outline-none',
+                            'font-display font-bold font-gmarket text-lg ui-not-focus-visible:outline-none',
                             selectedIndex === featureIndex
                               ? 'text-blue-600 lg:text-white'
                               : 'text-blue-100 hover:text-white lg:text-white',
@@ -116,7 +116,7 @@ export function PrimaryFeatures() {
                       </h3>
                       <p
                         className={clsx(
-                          'mt-2 hidden text-sm lg:block',
+                          'mt-2 hidden lg:block',
                           selectedIndex === featureIndex
                             ? 'text-white'
                             : 'text-blue-100 group-hover:text-white',
@@ -153,6 +153,7 @@ export function PrimaryFeatures() {
           )}
         </TabGroup>
       </Container>
+      </div>
     </section>
   )
 }

@@ -20,10 +20,10 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: '웹 디자인',
+    summary: '트렌디하고 직관적인 디자인으로 브랜드 가치를 높여드립니다.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      '15년 경력의 웹 디자이너가 귀사의 비즈니스에 최적화된 디자인을 제공합니다. 방문자의 눈길을 사로잡는 세련된 디자인으로 경쟁사와 차별화하세요.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -229,16 +229,15 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32 bg-white relative z-10"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+          <h2 className="font-gmarket text-3xl tracking-tight text-slate-900 sm:text-4xl">
+            비즈니스를 쉽고 간결하게.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            웹사이트 제작부터 운영까지, 모든 온라인 비즈니스의 시작을 oddodd와 함께하세요.
           </p>
         </div>
         <FeaturesMobile />
