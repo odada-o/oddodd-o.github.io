@@ -25,7 +25,7 @@ export function Hero() {
   }, []);
 
   // 아이템별 이동 방향 설정
-  const calculateTransform = (index) => {
+  const calculateTransform = (index: number) => {
     const moveAmount = scrollY * 0.4; // 이동 속도 조절 가능
 
     // 각 도형별로 다른 방향으로 이동
