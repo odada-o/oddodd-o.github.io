@@ -32,9 +32,9 @@ const features = [
     image: screenshotVatReturns,
   },
   {
-    title: '간편한 관리',
+    title: '웹 접근성 최적화',
     description:
-      '전문 지식 없이도 쉽게 콘텐츠를 업데이트할 수 있는 직관적인 관리 시스템을 제공합니다. 텍스트부터 이미지까지 손쉽게 변경 가능합니다.',
+      '장애인차별금지법을 준수하는 접근성 높은 웹사이트로 모든 사용자에게 동등한 정보 접근 기회를 제공합니다. 사용자 경험 향상과 함께 법적 리스크도 줄여드립니다.',
     image: screenshotReporting,
   },
 ]
@@ -76,7 +76,7 @@ export function PrimaryFeatures() {
       {/*/>*/}
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display font-gmarket text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="font-gmarket text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             홈페이지 제작, 이제 복잡하지 않습니다.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
@@ -104,7 +104,7 @@ export function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            'font-display font-bold font-gmarket text-lg ui-not-focus-visible:outline-none',
+                            'font-bold text-lg ui-not-focus-visible:outline-none',
                             selectedIndex === featureIndex
                               ? 'text-blue-600 lg:text-white'
                               : 'text-blue-100 hover:text-white lg:text-white',

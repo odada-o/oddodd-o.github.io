@@ -54,11 +54,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Inventory',
+    name: '빠른 제작',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      '단 7일 만에 완성되는 신속한 웹사이트 제작 서비스를 경험하세요.',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      '복잡한 절차 없이 요구사항 전달부터 완성까지 빠르게 진행됩니다. 급하게 웹사이트가 필요한 상황에도 걱정 없이 oddodd와 함께하세요.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -82,11 +82,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Contacts',
+    name: '간편한 관리',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      '전문 지식 없이도 누구나 쉽게 콘텐츠를 업데이트할 수 있습니다.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      '아임웹 기반의 직관적인 관리 시스템으로 텍스트, 이미지, 메뉴 등을 손쉽게 변경하세요. 웹사이트 운영이 어렵지 않다는 것을 경험하실 수 있습니다.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (

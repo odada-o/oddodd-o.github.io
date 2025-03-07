@@ -120,62 +120,109 @@ export function Pricing() {
     >
       <Container>
         <div className="md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+          <h2 className="font-gmarket text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
-            </span>{' '}
-            for everyone.
+              <span className="relative">합리적인 가격, 다양한 선택지</span>
+            </span>
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+              복잡한 옵션 없이 귀사의 필요에 맞는 명확한 가격 체계를 제공합니다.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Starter"
-            price="$9"
-            description="Good for anyone who is self-employed and just getting started."
+            name="원페이지 웹사이트"
+            price="44만원"
+            description="간단한 구성으로 시작하는 웹사이트."
             href="/register"
             features={[
-              'Send 10 quotes and invoices',
-              'Connect up to 2 bank accounts',
-              'Track up to 15 expenses per month',
-              'Manual payroll support',
-              'Export up to 3 reports',
+                '아임웹 기반 제작',
+              '1페이지 구성',
+              '반응형 디자인',
+              '도메인 1년 무료 제공',
+              '모바일 최적화',
+              '기본 SEO 설정',
+                '7일 이내 제작 완료',
+                '콘텐츠 1회 무료 수정'
             ]}
           />
           <Plan
             featured
-            name="Small business"
-            price="$15"
-            description="Perfect for small / medium sized businesses."
+            name="비즈니스 표준 패키지"
+            price="66만원"
+            description="비즈니스 성장을 위한 표준적인 웹사이트 구성."
             href="/register"
             features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
+                '아임웹 기반 제작',
+              '최대 5페이지 구성',
+              '프리미엄 반응형 디자인',
+              '도메인 1년 무료 제공',
+                '기본 웹 접근성 준수',
+              '모바일 최적화',
+              '고급 SEO 설정',
+              '소셜미디어 연동',
+              '5일 이내 제작 완료',
+                '콘텐츠 2회 무료 수정'
             ]}
           />
           <Plan
-            name="Enterprise"
-            price="$39"
-            description="For even the biggest enterprise companies."
+            name="맞춤형 비즈니스 솔루션"
+            price="129만원"
+            description="웹접근성과 디자인이 필요한 전문적인 웹사이트."
             href="/register"
             features={[
-              'Send unlimited quotes and invoices',
-              'Connect up to 15 bank accounts',
-              'Track up to 200 expenses per month',
-              'Automated payroll support',
-              'Export up to 25 reports, including TPS',
+                '그누보드 기반 제작',
+              '최대 10페이지 구성',
+              '완전 맞춤형 디자인',
+                '웹 접근성 지침 준수',
+              '도메인 및 호스팅 1년 무료',
+              '고급 애니메이션 효과',
+              '프리미엄 SEO 최적화',
+                '우선 제작 (3일 이내)',
+                '콘텐츠 3회 무료 수정'
             ]}
           />
         </div>
+
+          <div className="mt-12 rounded-2xl border border-slate-700 bg-slate-800/50 p-6 text-center">
+              <h3 className="font-display text-xl text-white mb-10">공통 안내 사항</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-300 text-sm">
+                  <div className="flex items-start">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">모든 플랜 1년 후 월 유지관리비 (아임웹: 3만원 / 그누보드: 5만원)</span>
+                  </div>
+                  <div className="flex items-start">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">호스팅, 보안 업데이트, 기술 지원 포함</span>
+                  </div>
+                  <div className="flex items-start">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">한 달에 한 번 무료 콘텐츠 수정 지원</span>
+                  </div>
+                  <div className="flex items-start">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">계약 후 전담 디자이너 배정 및 카카오톡 1:1 소통</span>
+                  </div>
+                  <div className="flex items-start">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">제작 기간 중 진행 상황 실시간 공유</span>
+                  </div>
+                  <div className="flex items-start">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">사이트 완성 후 관리 방법 무료 교육 제공</span>
+                  </div>
+                  <div className="flex items-start md:col-span-2">
+                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <span className="ml-4 text-left">지금 신청 시 웹사이트 분석 컨설팅 무료 제공</span>
+                  </div>
+              </div>
+              <div className="mt-8">
+                  <Button href="/contact" variant="outline" color="white">
+                      궁금한 점 문의하기
+                  </Button>
+              </div>
+          </div>
       </Container>
     </section>
   )
