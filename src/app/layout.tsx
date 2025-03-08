@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - TaxPal',
-    default: 'odd:odd - 홈페이지 제작',
+    default: '플랫오 - 홈페이지 제작',
   },
   description:
     'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',

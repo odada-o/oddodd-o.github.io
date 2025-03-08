@@ -46,7 +46,7 @@ export function Process() {
                         쉽고 빠른 웹사이트 제작 과정
                     </h2>
                     <p className="mt-4 text-lg tracking-tight text-slate-700 dark:text-slate-400">
-                        오드오드만의 효율적인 프로세스로 복잡한 과정 없이 빠르게 웹사이트를 제작해 드립니다.
+                        플랫오만의 효율적인 프로세스로 복잡한 과정 없이 빠르게 웹사이트를 제작해 드립니다.
                     </p>
                 </div>
 

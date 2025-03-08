@@ -28,6 +28,6 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
     //     fill="#0F172A"
     //   />
     // </svg>
-      <div className="text-3xl font-comfortaa tracking-tight font-black">od<strong>d:o</strong>dd</div>
+      <div className="text-3xl font-medium">플랫오</div>
   )
 }

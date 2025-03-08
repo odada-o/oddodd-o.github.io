@@ -58,7 +58,7 @@ const features: Array<Feature> = [
     summary:
       '단 7일 만에 완성되는 신속한 웹사이트 제작 서비스를 경험하세요.',
     description:
-      '복잡한 절차 없이 요구사항 전달부터 완성까지 빠르게 진행됩니다. 급하게 웹사이트가 필요한 상황에도 걱정 없이 oddodd와 함께하세요.',
+      '복잡한 절차 없이 요구사항 전달부터 완성까지 빠르게 진행됩니다. 급하게 웹사이트가 필요한 상황에도 걱정 없이 플랫오와 함께하세요.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -237,7 +237,7 @@ export function SecondaryFeatures() {
             비즈니스를 쉽고 간결하게.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            웹사이트 제작부터 운영까지, 모든 온라인 비즈니스의 시작을 oddodd와 함께하세요.
+            웹사이트 제작부터 운영까지, 모든 온라인 비즈니스의 시작을 플랫오와 함께하세요.
           </p>
         </div>
         <FeaturesMobile />
