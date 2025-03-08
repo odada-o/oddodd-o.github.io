@@ -28,6 +28,8 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
     //     fill="#0F172A"
     //   />
     // </svg>
-      <div className="text-3xl font-medium">플랫오</div>
+      <div className="text-3xl font-bold tracking-[0.5em] font-montserrat">
+        FLATO
+      </div>
   )
 }

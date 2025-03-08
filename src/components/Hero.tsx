@@ -9,8 +9,13 @@ import backgroundImage from '@/images/background-faqs.jpg'
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
+    // 컴포넌트 마운트 시 현재 스크롤 위치를 바로 설정
+    setScrollY(window.scrollY);
+    setIsInitialized(true);
+
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -30,12 +35,12 @@ export function Hero() {
 
     // 각 도형별로 다른 방향으로 이동
     const directions = [
-      { x: -1, y: -1 }, // 좌상단
-      { x: 1, y: -1 },  // 우상단
-      { x: -1, y: 1 },  // 좌하단
-      { x: 1, y: 1 },   // 우하단
-      { x: -0.5, y: 0.8 }, // 사선 좌하단
-      { x: 0.5, y: 0.8 }, // 사선 우하단
+      { x: -1, y: 1, }, // 좌상단
+      { x: 0, y: 0.5 },  // 우상단
+      { x: -0.5, y: 1 },  // 좌하단
+      { x: 0.5, y: 1 },   // 우하단
+      { x: -0.5, y: 0.5 }, // 사선 좌하단
+      { x: 0.5, y: 0.5 }, // 사선 우하단
     ];
 
     const dir = directions[index % directions.length];
@@ -52,30 +57,34 @@ export function Hero() {
     { id: 'd2', src: '/images/pattern/d-purple.svg', rotate: '' },
   ];
 
-  // 스크롤이 200px 이상이면 fixed 클래스 제거
+  // 스크롤이 1500px 이상이면 fixed 클래스 제거
   const containerClass = scrollY >= 1500
-      ? "absolute inset-0 z-0 flex items-end pb-[10vh]"
-      : "fixed inset-0 z-0 flex items-end pb-[10vh]";
+      ? "absolute inset-0 z-0 flex flex-col justify-center items-center text-center"
+      : "fixed inset-0 z-0 flex flex-col justify-center items-center text-center";
+
+  // 초기화되기 전까지는 아무것도 렌더링하지 않음
+  if (!isInitialized) {
+    return null; // 또는 로딩 인디케이터
+  }
 
   return (
-      <section className="relative h-[95vh] overflow-hidden bg-slate-50">
-        <div className={containerClass}>
+      <section className="relative h-[85vh] overflow-hidden bg-slate-50">
+        <div className={containerClass} style={{ opacity: scrollY >= 1500 ? 0 : 1 }}>
           <Image
-              className="absolute left-1/2 top-0 z-0 max-w-none -translate-y-1/4 translate-x-[-30%]"
+              className="absolute left-1/2 top-0 -z-10 max-w-none -translate-y-1/4 translate-x-[-30%]"
               src={backgroundImage}
               alt=""
               width={1558}
               height={946}
               unoptimized
           />
-          <strong className="absolute right-5 top-3 font-display text-md font-light uppercase tracking-tight text-slate-900 sm:text-5xl">
-            ELEVATING <br />
-            BRANDS THROUGH DESIGN.
+          <strong className="font-gmarket text-6xl font-medium uppercase tracking-tight text-slate-900 leading-[1.3]">
+            복잡함은 줄이고, <br/> 효율은 높이는 웹사이트 솔루션
           </strong>
-          <p className="mt-6 max-w-2xl text-lg tracking-tight text-slate-700 hidden">
-            Most bookkeeping software is accurate, <br /> but hard to use.
-          </p>
-          <div className="grid grid-cols-3 gap-5 w-2/3 max-w-5xl mx-auto relative z-10">
+          {/*<p className="mt-6 max-w-2xl text-lg tracking-tight text-slate-700">*/}
+          {/*  Most bookkeeping software is accurate, <br /> but hard to use.*/}
+          {/*</p>*/}
+          <div className="grid grid-cols-6 gap-5 w-2/3 max-w-5xl mx-auto relative z-10 mt-20">
             {items.map((item, index) => (
                 <span
                     key={item.id}

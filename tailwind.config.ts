@@ -26,9 +26,11 @@ export default {
       },
       fontFamily: {
         sans: 'var(--font-inter)',
-        display: 'var(--font-lexend)',
+        // display: 'var(--font-lexend)',
+        display: 'Pretendard',
         comfortaa: 'Comfortaa',
         gmarket: 'GmarketSansMedium',
+        montserrat: 'Montserrat',
       },
       maxWidth: {
         '2xl': '40rem',

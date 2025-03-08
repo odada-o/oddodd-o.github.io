@@ -38,7 +38,7 @@ export function Process() {
         <section
             id="process"
             aria-label="제작 과정"
-            className="bg-slate-50 py-20 sm:py-32 dark:bg-slate-900 relative z-10"
+            className="bg-slate-100 py-20 sm:py-32 dark:bg-slate-900 relative z-10"
         >
             <Container>
                 <div className="mx-auto max-w-2xl lg:mx-0">

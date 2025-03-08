@@ -16,11 +16,11 @@ export default function Home() {
       <main>
         <Hero />
         <PrimaryFeatures />
+        <Pricing />
           <Process />
         <SecondaryFeatures />
         <CallToAction />
         <Testimonials />
-        <Pricing />
         <Faqs />
       </main>
       <Footer />

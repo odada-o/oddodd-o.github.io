@@ -89,19 +89,18 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-gmarket text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            다양한 업종의 고객들이 인정한 <br/> 오드:오드
+            다양한 업종의 고객들이 인정한 <br/> 플랫오
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             전문적인 웹사이트로 비즈니스 성장을 경험한 고객들의 후기입니다.
           </p>
         </div>
         <ul
-          role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
         >
           {testimonials.map((column, columnIndex) => (
             <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
+              <ul className="flex flex-col gap-y-6 sm:gap-y-8">
                 {column.map((testimonial, testimonialIndex) => (
                   <li key={testimonialIndex}>
                     <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
