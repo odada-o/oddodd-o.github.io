@@ -31,7 +31,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
     //   />
     // </svg>
       <div className="text-3xl font-bold tracking-[0.5em] font-montserrat">
-          FLAT<span className="text-indigo-400">:O</span>
+          FLAT:O
         {/*  <Image src="/images/comm/logo.svg" alt="flato" width="150" height="500" />*/}
       </div>
   )
