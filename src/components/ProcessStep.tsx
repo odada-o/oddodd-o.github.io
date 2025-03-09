@@ -11,13 +11,13 @@ function ProcessStep({ number, title, description, isLast = false } : ProcessSte
     return (
         <div className="relative flex items-start">
             {/* 숫자 원형 표시 */}
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-blue-500 bg-blue-600 text-white font-bold">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-indigo-500 bg-indigo-600 text-white font-bold">
                 {number}
             </div>
 
             {/* 연결선 */}
             {!isLast && (
-                <div className="absolute left-5 top-10 h-full w-px bg-gradient-to-b from-blue-500 to-blue-300" />
+                <div className="absolute left-5 top-10 h-full w-px bg-gradient-to-b from-indigo-500 to-indigo-300" />
             )}
 
             {/* 내용 */}
@@ -97,7 +97,7 @@ export function Process() {
                 </div>
 
                 <div className="mx-auto mt-12 max-w-md text-center">
-                    <p className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                    <p className="text-base font-semibold text-indigo-600 dark:text-indigo-400">
                         라이트/스탠다드 플랜 기준 7일 이내, 프리미엄 플랜 기준 10일 이내 완성
                     </p>
                 </div>

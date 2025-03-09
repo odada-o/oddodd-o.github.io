@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     // <svg aria-hidden="true" viewBox="0 0 109 40" {...props}>
@@ -29,7 +31,8 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
     //   />
     // </svg>
       <div className="text-3xl font-bold tracking-[0.5em] font-montserrat">
-        FLATO
+          FLAT<span className="text-indigo-400">:O</span>
+        {/*  <Image src="/images/comm/logo.svg" alt="flato" width="150" height="500" />*/}
       </div>
   )
 }

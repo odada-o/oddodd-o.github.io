@@ -69,7 +69,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8',
+        featured ? 'order-first bg-indigo-600 py-8 lg:order-none' : 'lg:py-8',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -122,7 +122,7 @@ export function Pricing() {
         <div className="md:text-center">
           <h2 className="font-gmarket text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
-              <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
+              <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-indigo-400" />
               <span className="relative">합리적인 가격, 다양한 선택지</span>
             </span>
           </h2>
@@ -189,31 +189,31 @@ export function Pricing() {
               <h3 className="font-display text-xl text-white mb-10">공통 안내 사항</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-300 text-sm">
                   <div className="flex items-start">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">모든 플랜 1년 후 월 유지관리비 (아임웹: 3만원 / 그누보드: 5만원)</span>
                   </div>
                   <div className="flex items-start">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">호스팅, 보안 업데이트, 기술 지원 포함</span>
                   </div>
                   <div className="flex items-start">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">한 달에 한 번 무료 콘텐츠 수정 지원</span>
                   </div>
                   <div className="flex items-start">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">계약 후 전담 디자이너 배정 및 카카오톡 1:1 소통</span>
                   </div>
                   <div className="flex items-start">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">제작 기간 중 진행 상황 실시간 공유</span>
                   </div>
                   <div className="flex items-start">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">사이트 완성 후 관리 방법 무료 교육 제공</span>
                   </div>
                   <div className="flex items-start md:col-span-2">
-                      <CheckIcon className="text-blue-400 mt-0.5" />
+                      <CheckIcon className="text-indigo-400 mt-0.5" />
                       <span className="ml-4 text-left">지금 신청 시 웹사이트 분석 컨설팅 무료 제공</span>
                   </div>
               </div>
