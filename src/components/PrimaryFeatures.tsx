@@ -65,7 +65,7 @@ export function PrimaryFeatures() {
       aria-label="Features for running your books"
       className="overflow-hidden bg-slate-50"
     >
-      <div className="relative overflow-hidden bg-indigo-700/60 pb-28 pt-20 sm:py-32 backdrop-blur-2xl">
+      <div className="relative overflow-hidden bg-indigo-700/80 pb-28 pt-20 sm:py-32 backdrop-blur-2xl">
       {/*<Image*/}
       {/*  className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"*/}
       {/*  src={backgroundImage}*/}

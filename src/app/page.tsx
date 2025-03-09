@@ -8,6 +8,7 @@ import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 import {Process} from "@/components/ProcessStep";
+import FloatingBanner from "@/components/FloatingBanner";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <CallToAction />
         <Testimonials />
         <Faqs />
+          <FloatingBanner />
       </main>
       <Footer />
     </>
